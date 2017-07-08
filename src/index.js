@@ -13,6 +13,9 @@ import { syncHistoryWithStore } from 'react-router-redux';
 
 const store = configureStore();
 
+import injectTapEventPlugin from 'react-tap-event-plugin';
+injectTapEventPlugin();
+
 // Create an enhanced history that syncs navigation events with the store
 const history = syncHistoryWithStore(browserHistory, store);
 
