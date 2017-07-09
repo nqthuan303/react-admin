@@ -5,8 +5,8 @@ import PropTypes from 'prop-types';
 import { withStyles, createStyleSheet } from 'material-ui/styles';
 import List, { ListItem, ListItemIcon, ListItemText } from 'material-ui/List';
 import Divider from 'material-ui/Divider';
-import InboxIcon from 'material-ui-icons/Inbox';
-import DraftsIcon from 'material-ui-icons/Drafts';
+import Face from 'material-ui-icons/Face';
+import ChromeReaderMode from 'material-ui-icons/ChromeReaderMode';
 
 const styleSheet = createStyleSheet('Sidebar', theme => ({
   root: {
@@ -23,24 +23,15 @@ function Sidebar(props) {
       <List>
         <ListItem button>
           <ListItemIcon>
-            <InboxIcon />
+            <Face />
           </ListItemIcon>
-          <ListItemText primary="Inbox" />
+          <ListItemText primary="Quản lý user" />
         </ListItem>
         <ListItem button>
           <ListItemIcon>
-            <DraftsIcon />
+            <ChromeReaderMode />
           </ListItemIcon>
-          <ListItemText primary="Drafts" />
-        </ListItem>
-      </List>
-      <Divider />
-      <List>
-        <ListItem button>
-          <ListItemText primary="Trash" />
-        </ListItem>
-        <ListItem button component="a" href="#simple-list">
-          <ListItemText primary="Spam" />
+          <ListItemText primary="Quản lý bài viết" />
         </ListItem>
       </List>
     </div>
